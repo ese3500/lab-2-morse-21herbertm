@@ -3,32 +3,34 @@
 #include <util/delay.h>
 #define F_CPU 16000000UL
 
+
+//QUESTION 3 OF PART A
 void Initialize()
 {
     cli();
     //************ PIN ALLOCATION ***************
-    //TOGGLES AN LED CODE
-    DDRB |= (1<<DDB5); //SET PB5 TO BE OUTPUT PIN
-    //PB5 IS THE  SAME
-    // HIGH, LED ON
-    //LOW, LED OFF
-    DDRD &= ~(1<<DDB7); //SET PB7 TO BE INPUT PIN
-    //INSTEAD OF PD5 WE USE PB7
-    //NEEDS TO BE PULLED HIGH
-    //WHEN SWITCH IS PRESSED, VOLTAGE AT PD5 WILL BE 0V
-    PORTD |= (1<<PORTD5); // ENABLE PULL UP RESISTOR ON PD5
-    //PD5 IS THE SAME
-    //********** PIN CHANGE INTERRUPT SETUP *************
-    PCICR |= (1<<PCIE2); // ENABLE PCINT21 PIN CHANGE INTERRUPT
-    PCMSK2 |= (1<<PCINT21); //ENABLE TRIGGER FOR PCINT21
-    sei();
+    /*DDRB |= (1<<DDB4);
+    DDRB |= (1<<DDB3);
+    DDRB |= (1<<DDB2);
+    DDRB |= (1<<DDB1);
+     */
+
+    DDRD &= ~(1<<DDD7);
+    PORTD |= (1<<PORTD7);
+
+    DDRB = 0x1E;
+    PORTB = 0x2;
+
 } //INITIALIZE
-ISR(PCINT2_vect)
-    {
-    PORTB ^=(1<<PORTB5); // TOGGLE PB5
-    } //ISR
+
 int main(void)
 {
     Initialize();
-    while(1);
+    while(1){
+        if(!(PIND & (1<<PIND7))){
+            PORTB*=2;
+            if(PORTB>0x20) PORTB = 0x2;
+        }
+        _delay_ms(2000);
+    }// WHILE
 } // MAIN
