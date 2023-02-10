@@ -7,13 +7,13 @@
 // PART B CODE FOR QUESTION 5
 
 ISR(TIMER1_CAPT_vect){
-    if((PINB & 1)==1){
-        PORTB &=~(1<<PORTB5);
-        TCCR1B &=~(1<<ICES1);
-    } else {
-        PORTB |=(1<<PORTB5);
-        TCCR1B |=(1<<ICES1);
-    }
+        if((PINB & 1)==1){
+            PORTB &=~(1<<PORTB5);
+            TCCR1B &=~(1<<ICES1);
+        } else {
+            PORTB |=(1<<PORTB5);
+            TCCR1B |=(1<<ICES1);
+        }
 }
 void Initialize()
 {
