@@ -23,12 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49b69a3-36fb-41df-b566-fe988b68eaec" name="Changes" comment="Lights up 4 LEDs">
-      <change afterPath="$PROJECT_DIR$/parta.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partb.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uart.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pio/build/project.checksum" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/project.checksum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pio/build/uno/.sconsign39.dblite" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/uno/.sconsign39.dblite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-uno/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-uno/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-uno/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-uno/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +50,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-uno-Z_DUMMY_TARGET" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -83,6 +84,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -118,7 +120,7 @@
       <updated>1674842418105</updated>
       <workItem from="1674842420420" duration="676000" />
       <workItem from="1675546098333" duration="4228000" />
-      <workItem from="1676041433986" duration="8255000" />
+      <workItem from="1676041433986" duration="14954000" />
     </task>
     <servers />
   </component>
