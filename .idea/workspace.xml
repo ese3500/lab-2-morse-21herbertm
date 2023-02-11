@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49b69a3-36fb-41df-b566-fe988b68eaec" name="Changes" comment="Lights up 4 LEDs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pio/build/uno/.sconsign39.dblite" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/uno/.sconsign39.dblite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-uno/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-uno/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-uno/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-uno/Testing/Temporary/LastTest.log" afterDir="false" />
@@ -123,7 +122,7 @@
       <updated>1674842418105</updated>
       <workItem from="1674842420420" duration="676000" />
       <workItem from="1675546098333" duration="4228000" />
-      <workItem from="1676041433986" duration="18656000" />
+      <workItem from="1676041433986" duration="19179000" />
     </task>
     <servers />
   </component>
