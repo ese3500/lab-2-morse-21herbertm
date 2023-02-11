@@ -10,7 +10,7 @@
 #define BAUD_RATE 9600
 #define BAUD_PRESCALER (((F_CPU / (BAUD_RATE * 16UL))) - 1)
 
-// PART C
+// PART D
 void Initialize()
 {
     // Disable global interrupts
