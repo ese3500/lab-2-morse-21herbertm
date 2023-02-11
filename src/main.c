@@ -5,7 +5,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <string.h>
-#include "inc/uart.c"
+#include "uart.c"
 #include "uart.h"
 #define F_CPU 16000000UL
 #define BAUD_RATE 9600
