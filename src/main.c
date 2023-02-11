@@ -16,13 +16,10 @@ void Initialize()
 {
     // Disable global interrupts
     cli();
-    // You must use PB0 for input capture.
-    // When port PB0 is used for input capture in this fashion,
-    // it is referred to as ICP1 in the literature.
     DDRB &= ~(1<<DDB0);
-    PORTB |= (1<<PORTB0); // PULL UP RES
-    DDRB |= (1<<DDB5); //   LED
-    // looking for the rising edge
+    PORTB |= (1<<PORTB0);
+    DDRB |= (1<<DDB1);
+
     TCCR1B &= ~(1<<ICES1);
     TIFR1 |=(1<<ICF1);
     TIMSK1 |=(1<<ICIE1);
@@ -129,8 +126,6 @@ int main(void)
     sprintf(String,"Hello world! \n");
     UART_putstring(String);
     sei();
-
-    while (1)
-    {
-    } // WHILE
+    while(1){
+    }// WHILE
 } // MAIN
